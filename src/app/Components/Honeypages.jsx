@@ -1,6 +1,7 @@
 import React from 'react';
 import Oneimg from '../Image/pexels-fauxels-3184285.jpg';
 import Navbars from './Navbars.jsx';
+import CorporateSoftware from './CorporateSoftware';
 
 
 export default function Honeypages() {
@@ -11,6 +12,7 @@ export default function Honeypages() {
             }}
         >
             <Navbars />
+            <CorporateSoftware />
         </div>
     );
 }
