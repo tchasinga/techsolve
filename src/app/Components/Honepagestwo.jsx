@@ -1,13 +1,49 @@
+"use client"
 import React from 'react'
 import myVideo from '../Video/PromotionOFthePages.mp4'
+import CountUp from 'react-countup';
+
+
+
 
 export default function HomepageTwo() {
   return (
     <div class="max-w-screen-xl mx-auto">
+      <div className="mx-auto pt-[100px] items-center justify-center flex gap-10 flex-wrap  w-full">
+        <div className="text-black">
+          <h1 className='text-2xl font-bold'>
+            <CountUp end={500} suffix="k+ More" duration={10} />
+          </h1>
+          <p className='text-sm text-slate-900'>Trusted Companies Partner</p>
+        </div>
+
+        <div className="text-black">
+          <h1 className='text-2xl font-bold'>
+            <CountUp end={300} suffix="k+ View" duration={10} />
+          </h1>
+          <p className='text-sm text-slate-900'>Partner of training journey</p>
+        </div>
+
+        <div className="text-black">
+          <h1 className='text-2xl font-bold'>
+            <CountUp end={300} suffix="k+ View" duration={10} />
+          </h1>
+          <p className='text-sm text-slate-900'>Partner of training journey</p>
+        </div>
+
+
+        <div className="text-black">
+          <h1 className='text-2xl font-bold'>
+            <CountUp end={300} suffix="k+ View" duration={10} />
+          </h1>
+          <p className='text-sm text-slate-900'>Partner of training journey</p>
+        </div>
+      </div>
+
       <div className="min-h-screen w-full flex flex-col md:flex-row justify-between">
-        <div className="w-full md:w-1/2 flex items-center justify-center">
+        <div className="w-full md:w-1/2 flex items-center rounded-xl justify-center">
           <video
-            className="h-[300px] md:h-[500px]"
+            className="h-[300px] md:h-[500px] rounded-xl"
             src={myVideo}
             autoPlay
             muted
@@ -39,6 +75,7 @@ export default function HomepageTwo() {
           </div>
         </div>
       </div>
+      {/* Adding an Infinitie carousel */}
     </div>
   )
 }
