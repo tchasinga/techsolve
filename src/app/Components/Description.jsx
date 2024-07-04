@@ -32,6 +32,9 @@ export default function Description() {
                 {/* The upcoming part is added now...*/}
 
                 <div className="w-1/2">
+                 <div className="uppercase text-2xl text-slate-900 font-semibold">
+                      <h1>about Techsol Software kenya <span className='font-thin text-slate-500'>tsk</span></h1>
+                 </div>
                     <div className="py-2 text-slate-900 text-sm font-medium items-stretch align-middle">
                     <p>We are a premier digital solutions provider, dedicated to transforming businesses through innovative technology and strategic marketing.</p>
                     <p>Our services include website and app development, delivering responsive, user-friendly, and high-performing digital products tailored to your unique needs.</p>

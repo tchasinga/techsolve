@@ -8,9 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth; 
+  font-family: 'Poppins', sans-serif;
 }
-
-/* globals.css */
 
 body {
   font-family: 'Poppins', sans-serif;
