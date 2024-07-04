@@ -5,6 +5,7 @@ import Oneimg from '../Image/pexels-mart-production-7550581.jpg';
 import Twoimg from '../Image/pexels-pixabay-269077.jpg';
 import Threeimg from '../Image/pexels-thisisengineering-3861967.jpg';
 import { MdNavigateNext } from 'react-icons/md';
+import 'animate.css';
 
 export default function Description() {
     return (
@@ -52,7 +53,7 @@ export default function Description() {
                         <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website's search engine ranking, ensuring increased online visibility and engagement.</p>
                     </div>
 
-                    <div className="bg-cyan-900 p-3 mt-2 rounded-full gap-4 w-[50%] flex items-center justify-center cursor-pointer">
+                    <div className="bg-cyan-900 p-3 mt-2 rounded-full gap-4 w-[50%] flex items-center justify-center cursor-pointer animate__animated animate__shakeX">
                         <h1 className='text-slate-200 text-sm'>Learn more now</h1>
                         <div className="bg-blue-400 rounded-full">
                             <MdNavigateNext className="text-3xl" />
