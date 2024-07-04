@@ -10,21 +10,21 @@ export default function HomepageTwo() {
       <div className="mx-auto pt-[100px] items-center justify-center flex gap-10 flex-wrap  w-full">
         <div className="text-black">
           <h1 className='text-2xl font-bold'>
-            <CountUp end={500} suffix="k+ More" duration={10} />
+            <CountUp end={500} suffix="k+ More" duration={15} />
           </h1>
           <p className='text-sm text-slate-900'>Trusted Companies Partner</p>
         </div>
 
         <div className="text-black">
           <h1 className='text-2xl font-bold'>
-            <CountUp end={300} suffix="k+ View" duration={10} />
+            <CountUp end={300} suffix="k+ View" duration={15} />
           </h1>
           <p className='text-sm text-slate-900'>Partner of training journey</p>
         </div>
 
         <div className="text-black">
           <h1 className='text-2xl font-bold'>
-            <CountUp end={400} suffix="k+ View" duration={10} />
+            <CountUp end={400} suffix="k+ View" duration={15} />
           </h1>
           <p className='text-sm text-slate-900'>Partner project designer</p>
         </div>
@@ -32,7 +32,7 @@ export default function HomepageTwo() {
 
         <div className="text-black">
           <h1 className='text-2xl font-bold'>
-            <CountUp end={100} suffix="k+ View" duration={10} />
+            <CountUp end={100} suffix="k+ View" duration={15} />
           </h1>
           <p className='text-sm text-slate-900'>Data structure</p>
         </div>
