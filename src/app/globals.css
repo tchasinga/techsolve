@@ -8,5 +8,16 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
   font-family: "Poppins", sans-serif;
+}
+
+.animate__shakeX {
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  --animate-duration: 2.5s;
+  animation-duration: 2.5s;
 }

@@ -15,7 +15,7 @@ export default function CorporateSoftware() {
 
                 <div className="bg-green-800 p-3 mt-2 rounded-full gap-4 w-[20%] flex items-center justify-center cursor-pointer">
                     <h1>Get Stared Now</h1>
-                   <div className="bg-blue-950 rounded-full">
+                   <div className="bg-green-400 rounded-full">
                      <MdNavigateNext className="text-3xl"/>
                    </div>
                 </div>
