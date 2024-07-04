@@ -41,7 +41,7 @@ export default function HomepageTwo() {
       <div className="min-h-screen w-full flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/2 flex items-center rounded-xl justify-center">
           <video
-            className="border-2 rounded-xl"
+            className="rounded-xl"
             src={myVideo}
             autoPlay
             muted
