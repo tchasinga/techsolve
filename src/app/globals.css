@@ -10,3 +10,7 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
 }
+ 
+.code{
+  color : rgba(248, 248, 248, 0.626)
+}
