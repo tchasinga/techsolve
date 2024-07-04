@@ -7,6 +7,7 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 import { MdModelTraining } from "react-icons/md";
 import { GrCloudSoftware } from "react-icons/gr";
 import { RiSeoLine } from "react-icons/ri";
+import { MdOutlineAddAPhoto } from "react-icons/md";
 
 const myDataobject = [
     {
@@ -62,6 +63,12 @@ const myDataobject = [
         myTitle : "SEO Services",
         MyIcons : <RiSeoLine />,
         Description : "Our SEO experts use the latest techniques to improve your website’s search engine ranking. We offer comprehensive SEO services including keyword research, on-page optimization, link building, and performance tracking to increase your online visibility"   
+    },
+    {
+        id : 10,
+        myTitle : "Photo editing",
+        MyIcons : <MdOutlineAddAPhoto />,
+        Description : "We providing a professional photo for your business and marketing purposes. Our team ensures that each photo is optimized for performance and scalability."
     }
 ]
 
