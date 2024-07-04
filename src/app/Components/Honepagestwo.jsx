@@ -4,8 +4,6 @@ import myVideo from '../Video/PromotionOFthePages.mp4'
 import CountUp from 'react-countup';
 
 
-
-
 export default function HomepageTwo() {
   return (
     <div class="max-w-screen-xl mx-auto">
