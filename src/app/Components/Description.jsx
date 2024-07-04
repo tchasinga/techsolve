@@ -13,18 +13,27 @@ export default function Description() {
             }}
         >
             <div className="max-w-screen-xl mx-auto relative">
-                {/* New first part of the game */}
-                <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-900 "></div>
-                {/* New side of is added now...*/}
-                <div className="w-[350px] absolute top-[-10%] right-10 border-2">
-                    <Image src={Oneimg} alt="Image" />
+                {/* This is my first div */}
+                <div className="">
+                    {/* New first part of the game */}
+                    <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-900 "></div>
+                    {/* New side of is added now...*/}
+                    <div className="w-[350px] absolute top-[-10%] right-10 border-2">
+                        <Image src={Oneimg} alt="Image" />
+                    </div>
+                    <div className="w-[350px] absolute top-[20%] left-[10%] border-2">
+                        <Image src={Twoimg} alt="Image" />
+                    </div>
+                    <div className="w-[350px] absolute top-[60%] left-[-50%] border-2">
+                        <Image src={Threeimg} alt="Image" />
+                    </div>
                 </div>
-                 <div className="w-[350px] absolute top-[20%] left-[10%] border-2">
-                    <Image src={Twoimg} alt="Image" />
+
+                {/* The upcoming part is added now...*/}
+                
+                <div className="">
                 </div>
-                 <div className="w-[350px] absolute top-[60%] left-[-50%] border-2">
-                    <Image src={Threeimg} alt="Image" />
-                </div> 
+
             </div>
         </div>
     )
