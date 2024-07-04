@@ -12,11 +12,11 @@ export default function Description() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}
         >
-            <div className="max-w-screen-xl mx-auto relative">
+            <div className="max-w-5xl mx-auto border flex justify-between">
                 {/* This is my first div */}
-                <div className="">
-                    {/* New first part of the game */}
-                    <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-900 "></div>
+
+                {/* New first part of the game */}
+                <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-900 relative">
                     {/* New side of is added now...*/}
                     <div className="w-[350px] absolute top-[-10%] right-10 border-2">
                         <Image src={Oneimg} alt="Image" />
@@ -30,8 +30,24 @@ export default function Description() {
                 </div>
 
                 {/* The upcoming part is added now...*/}
-                
-                <div className="">
+
+                <div className="w-1/2">
+                    <div className="py-2 text-slate-900 text-sm font-medium">
+                    <p>We are a premier digital solutions provider, dedicated to transforming businesses through innovative technology and strategic marketing.</p>
+                    <p>Our services include website and app development, delivering responsive, user-friendly, and high-performing digital products tailored to your unique needs.</p>
+                    <p>Our digital marketing and branding experts craft comprehensive strategies to enhance your online presence, including social media management, email marketing, and content creation.</p>
+                    </div>
+                    
+                    <div className="py-2 text-slate-900 text-sm font-medium">
+                    <p>We specialize in creating strong<br/> brand identities with services like logo design and visual branding</p>
+                    <p>Our professional training programs empower your team with essential skills in digital marketing and web development.</p>
+                    </div>
+
+                    <div className="py-2 text-slate-900 text-sm font-medium">
+                   <p>Additionally, our advanced POS systems integrate both software and hardware solutions to streamline your business operations.</p>
+                   <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website's search engine ranking, ensuring increased online visibility and engagement.</p>
+                   </div>
+
                 </div>
 
             </div>
