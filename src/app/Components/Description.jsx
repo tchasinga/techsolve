@@ -12,11 +12,11 @@ export default function Description() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}
         >
-            <div className="max-w-5xl mx-auto border flex justify-between">
+            <div className="max-w-5xl mx-auto flex items-center justify-between">
                 {/* This is my first div */}
 
                 {/* New first part of the game */}
-                <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-900 relative">
+                <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-500 relative">
                     {/* New side of is added now...*/}
                     <div className="w-[350px] absolute top-[-10%] right-10 border-2">
                         <Image src={Oneimg} alt="Image" />
@@ -32,7 +32,7 @@ export default function Description() {
                 {/* The upcoming part is added now...*/}
 
                 <div className="w-1/2">
-                    <div className="py-2 text-slate-900 text-sm font-medium">
+                    <div className="py-2 text-slate-900 text-sm font-medium items-stretch align-middle">
                     <p>We are a premier digital solutions provider, dedicated to transforming businesses through innovative technology and strategic marketing.</p>
                     <p>Our services include website and app development, delivering responsive, user-friendly, and high-performing digital products tailored to your unique needs.</p>
                     <p>Our digital marketing and branding experts craft comprehensive strategies to enhance your online presence, including social media management, email marketing, and content creation.</p>
