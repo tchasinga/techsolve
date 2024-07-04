@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Oneimg from '../Image/pexels-mart-production-7550581.jpg';
 import Twoimg from '../Image/pexels-pixabay-269077.jpg';
 import Threeimg from '../Image/pexels-thisisengineering-3861967.jpg';
+import { MdNavigateNext } from 'react-icons/md';
 
 export default function Description() {
     return (
@@ -32,24 +33,31 @@ export default function Description() {
                 {/* The upcoming part is added now...*/}
 
                 <div className="w-1/2">
-                 <div className="uppercase text-2xl text-slate-900 font-semibold">
-                      <h1>about Techsol Software kenya <span className='font-thin text-slate-500'>tsk</span></h1>
-                 </div>
-                    <div className="py-2 text-slate-900 text-sm font-medium items-stretch align-middle">
-                    <p>We are a premier digital solutions provider, dedicated to transforming businesses through innovative technology and strategic marketing.</p>
-                    <p>Our services include website and app development, delivering responsive, user-friendly, and high-performing digital products tailored to your unique needs.</p>
-                    <p>Our digital marketing and branding experts craft comprehensive strategies to enhance your online presence, including social media management, email marketing, and content creation.</p>
+                    <div className="uppercase text-2xl text-slate-900 font-semibold">
+                        <h1>about Techsol Software kenya <span className='font-thin text-slate-500'>tsk</span></h1>
                     </div>
-                    
-                    <div className="py-2 text-slate-900 text-sm font-medium">
-                    <p>We specialize in creating strong<br/> brand identities with services like logo design and visual branding</p>
-                    <p>Our professional training programs empower your team with essential skills in digital marketing and web development.</p>
+                    <div className="py-2 text-slate-900 text-sm font-medium items-stretch align-middle">
+                        <p>We are a premier digital solutions provider, dedicated to transforming businesses through innovative technology and strategic marketing.</p>
+                        <p>Our services include website and app development, delivering responsive, user-friendly, and high-performing digital products tailored to your unique needs.</p>
+                        <p>Our digital marketing and branding experts craft comprehensive strategies to enhance your online presence, including social media management, email marketing, and content creation.</p>
                     </div>
 
                     <div className="py-2 text-slate-900 text-sm font-medium">
-                   <p>Additionally, our advanced POS systems integrate both software and hardware solutions to streamline your business operations.</p>
-                   <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website's search engine ranking, ensuring increased online visibility and engagement.</p>
-                   </div>
+                        <p>We specialize in creating strong<br /> brand identities with services like logo design and visual branding</p>
+                        <p>Our professional training programs empower your team with essential skills in digital marketing and web development.</p>
+                    </div>
+
+                    <div className="py-2 text-slate-900 text-sm font-medium">
+                        <p>Additionally, our advanced POS systems integrate both software and hardware solutions to streamline your business operations.</p>
+                        <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website's search engine ranking, ensuring increased online visibility and engagement.</p>
+                    </div>
+
+                    <div className="bg-cyan-900 p-3 mt-2 rounded-full gap-4 w-[50%] flex items-center justify-center cursor-pointer">
+                        <h1 className='text-slate-200 text-sm'>Learn more now</h1>
+                        <div className="bg-blue-400 rounded-full">
+                            <MdNavigateNext className="text-3xl" />
+                        </div>
+                    </div>
 
                 </div>
 
