@@ -39,7 +39,7 @@ export default function HomepageTwo() {
       </div>
 
       <div className="min-h-screen w-full flex flex-col md:flex-row justify-between">
-        <div className="w-full md:w-1/2 flex items-center rounded-xl justify-center">
+        <div className="w-full md:w-1/2 flex items-center justify-center">
           <video
             className="rounded-xl"
             src={myVideo}
