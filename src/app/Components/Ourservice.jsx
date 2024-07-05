@@ -1,9 +1,25 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Oneimg from '../Image/pexels-pixabay-269077.jpg'
 import myDataobject from '../Data/Dataone.js'
+import Slider from "react-slick";
 
 export default function Ourservice() {
+    const [clientData, setClientData] = useState([]);
+
+    useEffect(() => {
+        setClientData(myDataobject.slice(0, 6));
+    }, []);
+
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        speed: 500
+    };
+
     return (
         <div className="min-h-screen w-full max-w-full bg-fixed object-fill"
             style={{
@@ -11,10 +27,10 @@ export default function Ourservice() {
             }}
         >
             <div className="backdrop-blur-sm min-h-screen flex-col flex justify-center items-center">
-                <h1 className="text-4xl text-white font-bold">Our Services</h1>
+                <h1 className="text-4xl text-slate-100 font-bold py-5 uppercase">Our Provided Services at tsk</h1>
                 <div className="max-w-5xl mx-auto">
                     <div className="gridGeneral">
-                        {myDataobject.slice(0, 6).map((item) => (
+                        {clientData.map((item) => (
                             <div key={item.id} className="bg-white bg-opacity-50 p-4 py-4 rounded-lg">
                                 <div className="flex-col flex justify-center items-center">
                                     <div className="bg-blue-400 p-5 rounded-full text-2xl my-3">
@@ -24,13 +40,16 @@ export default function Ourservice() {
                                         <h1 className="text-lg font-bold">{item.myTitle}</h1>
                                     </div>
                                 </div>
-                                <div className="line-clamp-4 text-slate-900 ">
+                                <div className="line-clamp-4 text-slate-900">
                                     <p>{item.Description}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
+
+                {/* Adding carousel code */}
+                 
             </div>
         </div>
     )
