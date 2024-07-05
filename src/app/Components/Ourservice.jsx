@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Oneimg from '../Image/pexels-pixabay-269077.jpg'
 import myDataobject from '../Data/Dataone.js'
-import CenterMode from './SimpleSlider';
-import SimpleSlider from './SimpleSlider';
+import CenterMode from './CenterMode';
+
 
 export default function Ourservice() {
     const [clientData, setClientData] = useState([]);
@@ -43,7 +43,7 @@ export default function Ourservice() {
                 </div>
 
                 {/* Adding carousel code */}
-                <SimpleSlider />
+                <CenterMode />
             </div>
         </div>
     )
