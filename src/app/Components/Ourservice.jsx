@@ -44,7 +44,7 @@ export default function Ourservice() {
             }}
         >
             <div className="backdrop-blur-sm min-h-screen flex-col flex justify-center items-center">
-                <h1 className="text-4xl text-slate-100 font-bold py-5 uppercase ">Our Provided <span className="bg-green-800 p-2 rounded-tr-xl rounded-br-xl ">Services at tsk</span></h1>
+                <h1 className="text-4xl text-slate-100 font-bold py-[100px] uppercase ">Our Provided <span className="bg-green-800 p-2 rounded-tr-xl rounded-br-xl ">Services at tsk</span></h1>
                 <div className="max-w-5xl mx-auto mb-2">
                     <motion.div
                         className="gridGeneral"
