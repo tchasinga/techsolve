@@ -28,3 +28,8 @@ body {
   grid-gap: 5px;
 }
 
+.reversingflex:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
