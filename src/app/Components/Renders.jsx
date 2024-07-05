@@ -7,10 +7,10 @@ export default function Renders() {
         <div className="max-w-5xl mx-auto mt-[5%]">
             {secondlydata.map((data) => {
                 return (
-                    <div key={data.id} className="flex justify-between items-center align-middle reversingflex">
+                    <div key={data.id} className="flex justify-between items-center align-middle reversingflex pb-[5%]">
 
                         <div className="w-[400px] border-2 border-red-400 m-3 rounded-lg relative" >
-                            <Image src={data.ImagesSide} className='mb-[-10px] mt-2 ml-3' />
+                            <Image src={data.ImagesSide} className='mb-[-10px] mt-2 ml-3 rounded-lg' />
                             <div className='absolute border-2 border-slate-900 top-[35%] bg-white p-9 rounded-full text-3xl left-[85%] '>
                                 {data.MoreIcons}
                             </div>

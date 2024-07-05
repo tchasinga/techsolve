@@ -76,9 +76,9 @@ export default function Ourservice() {
 
                 {/* Adding carousel code */}
 
-                <div className="max-w-5xl mx-auto mb-5">
+                <div className="max-w-5xl mx-auto pb-[5%]">
                     <motion.div
-                        className="gridGeneral divide"
+                        className="gridGeneral"
                         initial="hidden"
                         whileInView="visible"
                         variants={containerVariants}

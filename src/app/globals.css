@@ -11,10 +11,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 .animate__shakeX {
   animation-iteration-count: infinite;
   animation-delay: 1s;
