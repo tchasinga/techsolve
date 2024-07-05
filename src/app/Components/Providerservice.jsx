@@ -22,7 +22,7 @@ export default function Providerservice() {
     React.useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % spanChanger.length);
-        }, 3000); // Change text every 3 seconds
+        }, 3000);
 
         return () => clearInterval(intervalId);
     }, [spanChanger.length]);

@@ -3,6 +3,7 @@ import Honeypages from "./Components/Honeypages";
 import Honepagestwo from "./Components/Honepagestwo";
 import Description from "./Components/Description";
 import Providerservice from "./Components/Providerservice";
+import Ourservice from "./Components/Ourservice";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Honepagestwo />
       <Description />
       <Providerservice />
+      <Ourservice />
     </main>
   );
 }
