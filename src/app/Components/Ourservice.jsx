@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Oneimg from '../Image/pexels-pixabay-269077.jpg'
 import myDataobject from '../Data/Dataone.js'
-import Slider from "react-slick";
+import CenterMode from './Centerfunction';
 
 export default function Ourservice() {
     const [clientData, setClientData] = useState([]);
@@ -11,14 +11,7 @@ export default function Ourservice() {
         setClientData(myDataobject.slice(0, 6));
     }, []);
 
-    const settings = {
-        className: "center",
-        centerMode: true,
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 3,
-        speed: 500
-    };
+
 
     return (
         <div className="min-h-screen w-full max-w-full bg-fixed object-fill"
@@ -49,7 +42,7 @@ export default function Ourservice() {
                 </div>
 
                 {/* Adding carousel code */}
-                 
+                <CenterMode />
             </div>
         </div>
     )
