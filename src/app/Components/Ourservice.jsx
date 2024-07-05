@@ -25,8 +25,8 @@ export default function Ourservice() {
             }}
         >
             <div className="backdrop-blur-sm min-h-screen flex-col flex justify-center items-center">
-                <h1 className="text-4xl text-slate-100 font-bold py-5 uppercase">Our Provided Services at tsk</h1>
-                <div className="max-w-5xl mx-auto">
+                <h1 className="text-4xl text-slate-100 font-bold py-5 uppercase ">Our Provided Services at tsk</h1>
+                <div className="max-w-5xl mx-auto mb-2">
                     <div className="gridGeneral">
                         {clientData.map((item) => (
                             <div key={item.id} className="bg-white bg-opacity-50 p-4 py-4 rounded-lg">
@@ -47,8 +47,8 @@ export default function Ourservice() {
                 </div>
 
                 {/* Adding carousel code */}
-                <h1 className="text-4xl text-slate-100 font-bold py-5 uppercase">Our Provided Services at tsk</h1>
-                <div className="max-w-5xl mx-auto">
+              
+                <div className="max-w-5xl mx-auto mb-5">
                     <div className="gridGeneral">
                         {someClientData.map((item) => (
                             <div key={item.id} className="bg-white bg-opacity-50 p-4 py-4 rounded-lg">
