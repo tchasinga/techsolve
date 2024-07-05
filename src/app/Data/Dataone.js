@@ -38,7 +38,7 @@ const myDataobject = [
         id : 5,
         myTitle: "Digital Marketing and Branding",
         MyIcons : <FaDigitalOcean />,
-        Description : "Our digital marketing team provides comprehensive strategies to enhance your online presence. We offer services such as social media management, email marketing, content creation, and online advertising to boost your brand&apos;s visibility and engagement.",
+        Description : "Our digital marketing team provides comprehensive strategies to enhance your online presence. We offer services such as social media management, email marketing, content creation, and online advertising to boost your brands visibility and engagement.",
     },
     {
         id : 6,
@@ -62,7 +62,7 @@ const myDataobject = [
         id : 9 ,
         myTitle : "SEO Services",
         MyIcons : <RiSeoLine />,
-        Description : "Our SEO experts use the latest techniques to improve your website&apos;s search engine ranking. We offer comprehensive SEO services including keyword research, on-page optimization, link building, and performance tracking to increase your online visibility"   
+        Description : "Our SEO experts use the latest techniques to improve your website search engine ranking. We offer comprehensive SEO services including keyword research, on-page optimization, link building, and performance tracking to increase your online visibility"   
     },
     {
         id : 10,
