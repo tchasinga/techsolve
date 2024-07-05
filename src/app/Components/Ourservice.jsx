@@ -59,7 +59,7 @@ export default function Ourservice() {
                                 variants={itemVariants}
                             >
                                 <div className="flex-col flex justify-center items-center">
-                                    <div className="bg-blue-400 p-5 rounded-full text-2xl my-3">
+                                    <div className="bg-blue-400 p-5 border-2 rounded-full text-2xl my-3">
                                         {item.MyIcons}
                                     </div>
                                     <div className="flex items-center justify-center mb-2">
@@ -78,7 +78,7 @@ export default function Ourservice() {
 
                 <div className="max-w-5xl mx-auto mb-5">
                     <motion.div
-                        className="gridGeneral"
+                        className="gridGeneral divide"
                         initial="hidden"
                         whileInView="visible"
                         variants={containerVariants}
@@ -90,7 +90,7 @@ export default function Ourservice() {
                                 variants={itemVariants}
                             >
                                 <div className="flex-col flex justify-center items-center">
-                                    <div className="bg-blue-400 p-5 rounded-full text-2xl my-3">
+                                    <div className="bg-blue-400 p-5 rounded-full text-2xl my-3 border-2">
                                         {item.MyIcons}
                                     </div>
                                     <div className="flex items-center justify-center mb-2">
