@@ -19,7 +19,7 @@ export default function Footer() {
             }}
         >
 
-            <div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px] ">
+            <div className="max-w-screen-xl mx-auto flex justify-evenly align-middle items-center flex-wrap w-full min-h-[500px] ">
 
                 <div className="flex flex-col">
                     <div className="w-24">
@@ -50,8 +50,8 @@ export default function Footer() {
 
                 {/* Second box */}
                 <div className="flex flex-col py-2">
-                    <h1>Home</h1>
-                    <div className="">
+                    <h1 className='text-lg font-bold text-slate-900'>Home</h1>
+                    <div className="flex flex-col text-slate-900 text-sm py-2">
                         <p>Services</p>
                         <p>About</p>
                         <p>Blog</p>
@@ -62,8 +62,8 @@ export default function Footer() {
 
                 {/* 3e box */}
                 <div className="">
-                    <h1>Services</h1>
-                    <div className="">
+                    <h1 className='text-lg font-bold text-slate-900'>Services</h1>
+                    <div className="flex flex-col text-slate-900 text-sm py-2">
                         <p>Building website</p>
                         <p>Building Apk & IOS</p>
                         <p>Web application</p>
@@ -74,8 +74,8 @@ export default function Footer() {
 
                 {/* 4e box */}
                 <div className="">
-                    <h1>Quick Links</h1>
-                    <div className="">
+                    <h1 className='text-lg font-bold text-slate-900'>Quick Links</h1>
+                    <div className="flex flex-col text-slate-900 text-sm py-2">
                         <p>Terms & Condition</p>
                         <p>Privacy Policy</p>
                         <p>Help center</p>
@@ -85,12 +85,11 @@ export default function Footer() {
                 </div>
 
                 {/* 5e box */}
-                <div className="flex-col flex justify-center">
-                    <h1>Contact us</h1>
+                <div className="flex-col flex justify-center items-center">
+                    <h1 className='text-lg font-bold text-slate-900'>Contact us</h1>
                     <div className="flex-col flex justify-center items-center">
-
-                        <div className='flex items-center justify-center gap-4'>
-                            <div>
+                    <div className='flex items-center justify-center  gap-4'>
+                        <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <FiPhoneCall />
                             </div>
                             <div>
@@ -99,8 +98,8 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className='flex items-center justify-center gap-4'>
-                            <div>
+                        <div className='flex justify-center items-center gap-4'>
+                        <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <MdOutlineEmail />
                             </div>
                             <div>
@@ -110,7 +109,7 @@ export default function Footer() {
                         </div>
 
                         <div className='flex items-center justify-center gap-4'>
-                            <div>
+                        <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <IoLocationOutline />
                             </div>
                             <div>
