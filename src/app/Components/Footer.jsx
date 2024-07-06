@@ -95,7 +95,7 @@ export default function Footer() {
                             </div>
                             <div>
                                 <h1>Call us : </h1>
-                                <p>(250) 78 72 890 28</p>
+                                <p>(250)787289028 call this number</p>
                             </div>
                         </div>
 
