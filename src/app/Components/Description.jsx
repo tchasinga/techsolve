@@ -1,11 +1,13 @@
-import React from 'react'
+"use client"
+import React from 'react';
 import Image from 'next/image';
-// Image import side 
 import Oneimg from '../Image/pexels-mart-production-7550581.jpg';
 import Twoimg from '../Image/pexels-pixabay-269077.jpg';
 import Threeimg from '../Image/pexels-thisisengineering-3861967.jpg';
 import { MdNavigateNext } from 'react-icons/md';
 import 'animate.css';
+import { motion } from "framer-motion";
+import { ImageOne, ImageTwo, ImageThree } from '../Animation/animation.js';
 
 export default function Description() {
     return (
@@ -20,15 +22,29 @@ export default function Description() {
                 {/* New first part of the game */}
                 <div className="h-[400px] w-[250px] bg-transparent border-2 border-red-500 relative">
                     {/* New side of is added now...*/}
-                    <div className="w-[350px] absolute top-[-10%] right-10 border-2">
+                    <motion.div className="w-[350px] absolute top-[-10%] right-10 border-2"
+                     initial="offscreen"
+                     whileInView={"onscreen"}
+                     variants={ImageOne()}
+                    >
                         <Image src={Oneimg} alt="Image" />
-                    </div>
-                    <div className="w-[350px] absolute top-[20%] left-[10%] border-2">
+                    </motion.div>
+
+                    <motion.div className="w-[350px] absolute top-[20%] left-[10%] border-2"
+                    initial="offscreen"
+                    whileInView={"onscreen"}
+                    variants={ImageTwo()}
+                    >
                         <Image src={Twoimg} alt="Image" />
-                    </div>
-                    <div className="w-[350px] absolute top-[60%] left-[-50%] border-2">
+                    </motion.div>
+
+                    <motion.div className="w-[350px] absolute top-[60%] left-[-50%] border-2"
+                     initial="offscreen"
+                     whileInView={"onscreen"}
+                     variants={ImageThree()}
+                    >
                         <Image src={Threeimg} alt="Image" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* The upcoming part is added now...*/}
