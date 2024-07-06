@@ -10,7 +10,7 @@ export default function Contactus() {
     >
       <div className='flex  justify-end items-center max-w-4xl mx-auto pt-10 min-h-[400px]'>
         <div class="flex flex-col justify-center">
-          <h1 className='text-4xl text-white uppercase font-extrabold'>contact us <span className='font-thin'>today</span></h1>
+          <h1 className='text-4xl text-white uppercase font-extrabold'>contact us <span className='font-thin'>today!</span></h1>
           <hr className='w-[100px] py-2 mt-1'/>
           <div class="text-base text-slate-100 ">
              <p>Get in touch with us if you to optimize your controlling and</p>
