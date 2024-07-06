@@ -2,12 +2,18 @@
 import React from 'react'
 import myVideo from '../Video/PromotionOFthePages.mp4'
 import CountUp from 'react-countup';
+import { motion } from "framer-motion"
+import { containerVariant } from '../Animation/animation.js';
 
 
 export default function HomepageTwo() {
   return (
     <div class="max-w-screen-xl mx-auto">
-      <div className="mx-auto pt-[100px] items-center justify-center flex gap-10 flex-wrap  w-full">
+      <motion.div className="mx-auto pt-[100px] items-center justify-center flex gap-10 flex-wrap  w-full"
+      initial="offscreen"
+      whileInView={"onscreen"}
+      variants={containerVariant()}
+      >
         <div className="text-black">
           <h1 className='text-2xl font-bold'>
             <CountUp end={500} suffix="k+ More" duration={15} />
@@ -36,9 +42,13 @@ export default function HomepageTwo() {
           </h1>
           <p className='text-sm text-slate-900'>Data structure</p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="min-h-screen w-full flex flex-col md:flex-row justify-between">
+      <motion.div className="min-h-screen w-full flex flex-col md:flex-row justify-between"
+      initial="offscreen"
+      whileInView={"onscreen"}
+      variants={containerVariant()}
+      >
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <video
             className="rounded-xl"
@@ -72,7 +82,7 @@ export default function HomepageTwo() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Adding an Infinitie carousel */}
     </div>
   )
