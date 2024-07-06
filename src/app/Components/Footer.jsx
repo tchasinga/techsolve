@@ -19,29 +19,29 @@ export default function Footer() {
             }}
         >
 
-            <div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px]">
+            <div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px] ">
 
                 <div className="flex flex-col">
                     <div className="w-24">
                         <Image src={ComponentWhatsApp} />
                     </div>
 
-                    <div className="flex flex-col text-slate-900 text-sm">
+                    <div className="flex flex-col text-slate-900 text-sm py-2">
                         <p>We implement the corporation performance</p>
                         <p>Software TSk for consideration planning</p>
                         <p>And reporting purposes</p>
                     </div>
                     <div className="">
-                        <h1 className='text-xl font-bold text-slate-900'>Follow us :</h1>
+                        <h1 className='text-lg font-bold text-slate-900'>Follow us :</h1>
 
-                        <div className="flex gap-3 items-center">
-                            <div className="bg-blue-600 p-3 rounded-full text-white text-xl font-bold">
+                        <div className="flex gap-3 items-center py-3">
+                            <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <IoLogoInstagram className="" />
                             </div>
-                            <div className="bg-blue-600 p-3 rounded-full text-white text-xl font-bold">
+                            <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <FaFacebookF className="" />
                             </div>
-                            <div className="bg-blue-600 p-3 rounded-full text-white text-xl font-bold">
+                            <div className="bg-blue-600 p-3 rounded-full text-white text-lg font-bold">
                                 <FaTwitter className="" />
                             </div>
                         </div>
