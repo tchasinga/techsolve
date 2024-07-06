@@ -1,11 +1,11 @@
 
 // this will  be my animation file using framer motion
 export const containerVariant = (delay = 0.5) => ({
-    offscreen:{
+    offscreen: {
         opacity: -0,
         y: 50,
     },
-    onscreen : {
+    onscreen: {
         opacity: 10,
         y: 0,
         transition: {
@@ -16,7 +16,7 @@ export const containerVariant = (delay = 0.5) => ({
     }
 })
 
-export const textVariantReveals = (delay = 0.5) => ({
+export const textVariantReveals = (delay = 1) => ({
     offscreen: {
         opacity: 0,
         y: 50,
@@ -26,7 +26,7 @@ export const textVariantReveals = (delay = 0.5) => ({
         y: 0,
         transition: {
             delay: delay,
-            duration: 1.5,
+            duration: 3.5,
             type: "spring",
             stiffness: 100,
             damping: 20,
@@ -37,11 +37,11 @@ export const textVariantReveals = (delay = 0.5) => ({
 
 
 export const ImageOne = (delay = 0.5) => ({
-    offscreen:{
+    offscreen: {
         opacity: 0,
         y: 50,
     },
-    onscreen : {
+    onscreen: {
         opacity: 4,
         y: 0,
         transition: {
@@ -53,11 +53,11 @@ export const ImageOne = (delay = 0.5) => ({
 })
 
 export const ImageTwo = (delay = 1) => ({
-    offscreen:{
+    offscreen: {
         opacity: 0,
         y: 50,
     },
-    onscreen : {
+    onscreen: {
         opacity: 4,
         y: 0,
         transition: {
@@ -70,11 +70,11 @@ export const ImageTwo = (delay = 1) => ({
 
 
 export const ImageThree = (delay = 1.5) => ({
-    offscreen:{
+    offscreen: {
         opacity: 0,
         y: 50,
     },
-    onscreen : {
+    onscreen: {
         opacity: 4,
         y: 0,
         transition: {

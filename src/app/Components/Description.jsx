@@ -7,7 +7,7 @@ import Threeimg from '../Image/pexels-thisisengineering-3861967.jpg';
 import { MdNavigateNext } from 'react-icons/md';
 import 'animate.css';
 import { motion } from "framer-motion";
-import { ImageOne, ImageTwo, ImageThree } from '../Animation/animation.js';
+import { ImageOne, ImageTwo, ImageThree , textVariantReveals} from '../Animation/animation.js';
 
 export default function Description() {
     return (
@@ -49,7 +49,11 @@ export default function Description() {
 
                 {/* The upcoming part is added now...*/}
 
-                <div className="w-1/2">
+                <motion.div className="w-1/2"
+                 initial="offscreen"
+                 whileInView={"onscreen"}
+                 variants={textVariantReveals()}
+                >
                     <div className="uppercase text-2xl text-slate-900 font-semibold">
                         <h1>about Techsol Software kenya <span className='font-thin text-slate-500'>tsk</span></h1>
                     </div>
@@ -76,7 +80,7 @@ export default function Description() {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
 
             </div>
         </div>

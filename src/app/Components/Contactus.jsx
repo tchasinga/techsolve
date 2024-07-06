@@ -1,6 +1,9 @@
 "use client";
 import React from 'react'
 import Oneimg from '../Image/pexels-olly.jpg';
+import { motion } from "framer-motion";
+import { textVariantReveals} from '../Animation/animation.js';
+
 
 export default function Contactus() {
   return (
@@ -8,7 +11,11 @@ export default function Contactus() {
     style={{
       background: `linear-gradient(to left, rgba(4, 5, 5, 0.801), rgba(0, 0, 0, 0.112)), url(${Oneimg.src}) center / cover no-repeat fixed`,}}
     >
-      <div className='flex  justify-end items-center max-w-4xl mx-auto pt-10 min-h-[400px]'>
+      <motion.div className='flex  justify-end items-center max-w-4xl mx-auto pt-10 min-h-[400px]'
+       initial="offscreen"
+       whileInView={"onscreen"}
+       variants={textVariantReveals()}
+      >
         <div class="flex flex-col justify-center">
           <h1 className='text-4xl text-white uppercase font-extrabold'>contact us <span className='font-thin'>today!</span></h1>
           <hr className='w-[100px] py-2 mt-1'/>
@@ -19,7 +26,7 @@ export default function Contactus() {
              <p>The design and implementation</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
