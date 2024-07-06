@@ -6,6 +6,7 @@ import Providerservice from "./Components/Providerservice";
 import Ourservice from "./Components/Ourservice";
 import Ourrecentworks from "./Components/Ourrecentworks";
 import Contactus from "./Components/Contactus";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Ourservice />
       <Ourrecentworks/>
       <Contactus />
+      <Footer />
     </main>
   );
 }
