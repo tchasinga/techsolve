@@ -79,7 +79,7 @@ export default function Footer() {
                         <p>Terms & Condition</p>
                         <p>Privacy Policy</p>
                         <p>Help center</p>
-                        <p>Career</p>
+                        <p>Career</p> 
                         <p>Contact us</p>
                     </div>
                 </div>
