@@ -64,7 +64,7 @@ export default function HomepageTwo() {
 
         {/* Second div */}
         <div className="w-full md:w-1/2 flex flex-col justify-center p-4">
-          <h2 className="text-xl text-slate-900 font-bold mb-4 uppercase">Advantages of working with us</h2>
+          <h2 className="text-xl Advantages text-slate-900 font-bold mb-4 uppercase">Advantages of working with us</h2>
           <div className="list-disc pl-4 text">
             <div className="text-slate-900 text-base py-3 font-medium">
               <p>Expertise and Experience: They bring extensive knowledge and skills.</p>

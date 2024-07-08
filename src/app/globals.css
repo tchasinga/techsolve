@@ -31,5 +31,8 @@
 
 
 /* this it will be a tablet breackpoint view */
-@media screen and (max-width: 884px){
+@media screen and (max-width: 468px){
+  .Advantages{
+    font-size: 15px;
+  }
 }
