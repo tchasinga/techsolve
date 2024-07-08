@@ -40,6 +40,9 @@
   .myshow{
     display: block;
   }
+  .textsm{
+    font-size: 15px;
+  }
 }
 
 .myshow{

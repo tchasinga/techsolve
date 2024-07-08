@@ -28,29 +28,28 @@ export default function Providerservice() {
     }, [spanChanger.length]);
 
     return (
-       <div className="bg-slate-200">
-            <div className="h-[100px] uppercase flex justify-center items-center gap-5">
-            <div>
-                <h1 className="text-4xl font-bold text-slate-900 ">
-                    we provide a trusted service in
-                </h1>
-            </div>
-
-            <div>
-            <AnimatePresence mode="wait">
-                    <motion.h1
-                        className=" text-4xl text-gray-800 font-medium"
-                        key={index}
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        {spanChanger[index]}
-                    </motion.h1>
-                </AnimatePresence>
+        <div className="bg-slate-200 p-4">
+            <div className="h-[100px] uppercase flex flex-col md:flex-row justify-center items-center gap-5">
+                <div>
+                    <h1 className="text-2xl md:text-4xl font-bold text-slate-900 text-center md:text-left">
+                        we provide a trusted service in
+                    </h1>
+                </div>
+                <div>
+                    <AnimatePresence mode="wait">
+                        <motion.h1
+                            className="text-2xl md:text-4xl textsm text-gray-800 font-medium text-center md:text-left"
+                            key={index}
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 20 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            {spanChanger[index]}
+                        </motion.h1>
+                    </AnimatePresence>
+                </div>
             </div>
         </div>
-       </div>
     );
 }
