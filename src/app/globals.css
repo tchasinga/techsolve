@@ -43,6 +43,23 @@
   .textsm{
     font-size: 15px;
   }
+  .reversingflex:nth-child(1),
+  .reversingflex:nth-child(2),
+  .reversingflex:nth-child(3),
+  .reversingflex:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  .backer{
+    margin-left: -5%;
+    width: 80%;
+  }
+
+  .myletter{
+    padding: 10px;
+  }
+
 }
 
 .myshow{
