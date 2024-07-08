@@ -2,7 +2,6 @@ import React from 'react';
 import Oneimg from '../Image/pexels-fauxels-3184285.jpg';
 import Navbars from './Navbars.jsx';
 import CorporateSoftware from './CorporateSoftware';
-import myVideo from '../Video/PromotionOFthePages.mp4'
 
 
 export default function Honeypages() {

@@ -16,9 +16,9 @@ export default function Home() {
       <Description />
       <Providerservice />
       <Ourservice />
-      <Ourrecentworks/>
-      <Contactus />
-      <Footer />
+      <Ourrecentworks />
+      <Contactus/>
+      <Footer/>
     </main>
   );
 }

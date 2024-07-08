@@ -19,7 +19,7 @@ export default function Contactus() {
         <div class="flex flex-col justify-center">
           <h1 className='text-4xl text-white uppercase font-extrabold'>contact us <span className='font-thin'>today!</span></h1>
           <hr className='w-[100px] py-2 mt-1'/>
-          <div class="text-base text-slate-100 ">
+          <div class="text-base text-slate-100  morepadding">
              <p>Get in touch with us if you to optimize your controlling and</p>
              <p>Accounting processes with system supports we would be happy to</p>
              <p>Present our solution portfolio to you and support you as a partner in</p>

@@ -1,9 +1,8 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import "../app/globals.css"; // Ensure this path is correct based on your project structure
 
-const inter = Poppins({
-  subsets: ["latin-ext"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+const inter = Inter({
+  subsets: ["latin"],
 });
 
 export const metadata = {

@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .animate__shakeX {
@@ -18,7 +18,7 @@
   animation-duration: 2.5s;
 }
 
-.gridGeneral{
+.gridGeneral {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 5px;
@@ -29,3 +29,75 @@
   flex-direction: row-reverse;
 }
 
+/* this it will be a tablet breackpoint view */
+@media screen and (max-width: 468px) {
+  .Advantages {
+    font-size: 15px;
+  }
+  .mynode{
+    display: none;
+  }
+  .myshow{
+    display: block;
+  }
+  .textsm{
+    font-size: 15px;
+  }
+  .reversingflex:nth-child(1),
+  .reversingflex:nth-child(2),
+  .reversingflex:nth-child(3),
+  .reversingflex:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  .backer{
+    margin-left: -5%;
+    width: 80%;
+  }
+
+  .myletter{
+    padding: 10px;
+  }
+
+  .reducer{
+    font-size: 15px;
+  }
+
+  .mytop{
+    margin-top: 10%;
+  }
+  .morepadding{
+    padding: 5px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.myshow{
+  display: none;
+}
+
+/* another side  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
