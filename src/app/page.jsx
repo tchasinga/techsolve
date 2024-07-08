@@ -7,7 +7,6 @@ import Ourservice from "./Components/Ourservice";
 import Ourrecentworks from "./Components/Ourrecentworks";
 import Contactus from "./Components/Contactus";
 import Footer from "./Components/Footer";
-import MySwipper from "./Components/MySwipper";
 
 export default function Home() {
   return (
