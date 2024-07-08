@@ -34,7 +34,9 @@
   .Advantages {
     font-size: 15px;
   }
-  
+  .mynode{
+    display: none;
+  }
 }
 
 /* another side  */

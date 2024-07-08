@@ -18,7 +18,7 @@ export default function Description() {
         >
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4 mypad  ">
                 {/* First Div with Images */}
-                <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative sm:my-[100px]">
+                <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative sm:my-[100px] mynode">
                     {/* New side of is added now...*/}
                     <motion.div className="w-[350px] absolute top-[-10%] right-10 border-2"
                      initial="offscreen"
