@@ -8,6 +8,7 @@ import { MdNavigateNext } from 'react-icons/md';
 import 'animate.css';
 import { motion } from "framer-motion";
 import { ImageOne, ImageTwo, ImageThree , textVariantReveals} from '../Animation/animation.js';
+import MySwipper from './MySwipper';
 
 export default function Description() {
     return (

@@ -3,7 +3,7 @@ import React from 'react'
 import myVideo from '../Video/PromotionOFthePages.mp4'
 import CountUp from 'react-countup';
 import { motion } from "framer-motion"
-import { containerVariant } from '../Animation/animation.js';
+import { containerVariant, textVariantReveals } from '../Animation/animation.js';
 
 export default function HomepageTwo() {
   return (
@@ -47,7 +47,7 @@ export default function HomepageTwo() {
         className="min-h-screen w-full flex flex-col md:flex-row justify-between items-center gap-6"
         initial="offscreen"
         whileInView={"onscreen"}
-        variants={containerVariant()}
+        variants={textVariantReveals()}
       >
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <video

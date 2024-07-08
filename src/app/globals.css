@@ -37,6 +37,13 @@
   .mynode{
     display: none;
   }
+  .myshow{
+    display: block;
+  }
+}
+
+.myshow{
+  display: none;
 }
 
 /* another side  */

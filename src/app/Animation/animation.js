@@ -19,7 +19,7 @@ export const containerVariant = (delay = 0.5) => ({
 export const textVariantReveals = (delay = 1) => ({
     offscreen: {
         opacity: 0,
-        y: 50,
+        y: 0,
     },
     onscreen: {
         opacity: 1,
