@@ -70,7 +70,7 @@ export default function Description() {
 
                     <div className="py-2 text-slate-900 text-sm font-medium">
                         <p>Additionally, our advanced POS systems integrate both software and hardware solutions to streamline your business operations.</p>
-                        <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website&apo;s search engine ranking, ensuring increased online visibility and engagement.</p>
+                        <p>Lastly, our SEO services leverage cutting-edge techniques to boost your website&apos;s search engine ranking, ensuring increased online visibility and engagement.</p>
                     </div>
 
                     <div className="bg-cyan-900 p-3 mt-2 rounded-full gap-4 w-[50%] flex items-center justify-center cursor-pointer animate__animated animate__shakeX">
