@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react'; // Removed unused useEffect import
 import '../globals.css'
+import ComponentWhatsApp from '../Log/WhatsApp.jpeg'
 
 export default function Navbars() {
     const [open, setOpen] = useState(false);
@@ -17,9 +18,7 @@ export default function Navbars() {
         <nav className='fixed font-poppins font-sans w-full left-0 top-0 z-[999] mypad'>
             <div className="flex items-center justify-between">
                 <div className="mx-7">
-                    <h4 className="text-sm myheader uppercase font-bold text-slate-200">
-                        Jet-codesign
-                    </h4>
+                   
                 </div>
 
                 <div className='text-gray-900 md:block hidden px-7 py-2 font-medium'>
