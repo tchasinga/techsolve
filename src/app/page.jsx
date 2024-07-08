@@ -13,6 +13,7 @@ export default function Home() {
     <main className="max-w-full">
       <Honeypages />
       <Honepagestwo />
+      <Description />
     </main>
   );
 }
