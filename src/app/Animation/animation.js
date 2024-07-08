@@ -10,7 +10,7 @@ export const containerVariant = (delay = 0.5) => ({
         y: 0,
         transition: {
             delay: delay,
-            duration: 4.5,
+            duration: 2.5,
             type: "spring",
         }
     }
@@ -46,7 +46,7 @@ export const ImageOne = (delay = 0.5) => ({
         y: 0,
         transition: {
             delay: delay,
-            duration: 4.5,
+            duration: 2.5,
             type: "spring",
         }
     }
@@ -62,7 +62,7 @@ export const ImageTwo = (delay = 1) => ({
         y: 0,
         transition: {
             delay: delay,
-            duration: 4.5,
+            duration: 2.5,
             type: "spring",
         }
     }
@@ -79,7 +79,7 @@ export const ImageThree = (delay = 1.5) => ({
         y: 0,
         transition: {
             delay: delay,
-            duration: 4.5,
+            duration: 2.5,
             type: "spring",
         }
     }
