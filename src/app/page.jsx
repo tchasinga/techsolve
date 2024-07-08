@@ -16,6 +16,7 @@ export default function Home() {
       <Honepagestwo />
       <Description />
       <Providerservice />
+      <Ourservice />
     </main>
   );
 }
