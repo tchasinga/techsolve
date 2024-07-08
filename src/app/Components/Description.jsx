@@ -16,31 +16,32 @@ export default function Description() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}
         >
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4">
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4 sm:py-[200px]">
                 {/* First Div with Images */}
-                <div className="h-[400px] w-full md:w-[250px] bg-transparent border-2 border-red-500 relative">
-                    <motion.div className="w-[250px] md:w-[350px] absolute top-[-10%] md:right-10 border-2"
-                        initial="offscreen"
-                        whileInView={"onscreen"}
-                        variants={ImageOne()}
+                <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative">
+                    {/* New side of is added now...*/}
+                    <motion.div className="w-[350px] absolute top-[-10%] right-10 border-2"
+                     initial="offscreen"
+                     whileInView={"onscreen"}
+                     variants={ImageOne()}
                     >
-                        <Image src={Oneimg} alt="Image" layout="responsive" />
+                        <Image src={Oneimg} alt="Image" />
                     </motion.div>
 
-                    <motion.div className="w-[250px] md:w-[350px] absolute top-[20%] md:left-[10%] border-2"
-                        initial="offscreen"
-                        whileInView={"onscreen"}
-                        variants={ImageTwo()}
+                    <motion.div className="w-[350px] absolute top-[20%] left-[10%] border-2"
+                    initial="offscreen"
+                    whileInView={"onscreen"}
+                    variants={ImageTwo()}
                     >
-                        <Image src={Twoimg} alt="Image" layout="responsive" />
+                        <Image src={Twoimg} alt="Image" />
                     </motion.div>
 
-                    <motion.div className="w-[250px] md:w-[350px] absolute top-[60%] md:left-[-50%] border-2"
-                        initial="offscreen"
-                        whileInView={"onscreen"}
-                        variants={ImageThree()}
+                    <motion.div className="w-[350px] absolute top-[60%] left-[-50%] border-2"
+                     initial="offscreen"
+                     whileInView={"onscreen"}
+                     variants={ImageThree()}
                     >
-                        <Image src={Threeimg} alt="Image" layout="responsive" />
+                        <Image src={Threeimg} alt="Image" />
                     </motion.div>
                 </div>
 
