@@ -44,7 +44,7 @@ export default function HomepageTwo() {
       </motion.div>
 
       <motion.div 
-        className="min-h-screen w-full flex flex-col md:flex-col justify-between items-center gap-3"
+        className="min-h-screen w-full flex flex-col md:flex-row justify-between items-center gap-6"
         initial="offscreen"
         whileInView={"onscreen"}
         variants={containerVariant()}

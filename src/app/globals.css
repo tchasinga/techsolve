@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .animate__shakeX {
@@ -18,7 +18,7 @@
   animation-duration: 2.5s;
 }
 
-.gridGeneral{
+.gridGeneral {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 5px;
@@ -29,20 +29,9 @@
   flex-direction: row-reverse;
 }
 
-
 /* this it will be a tablet breackpoint view */
-@media screen and (max-width: 468px){
-  .Advantages{
+@media screen and (max-width: 468px) {
+  .Advantages {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 884px){
-  .Advantages{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width : 100%;
   }
 }
