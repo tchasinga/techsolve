@@ -16,9 +16,9 @@ export default function Description() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}
         >
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4 sm:py-[200px]">
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4 mypad  ">
                 {/* First Div with Images */}
-                <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative">
+                <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative sm:my-[100px]">
                     {/* New side of is added now...*/}
                     <motion.div className="w-[350px] absolute top-[-10%] right-10 border-2"
                      initial="offscreen"
