@@ -19,9 +19,9 @@ export default function Footer() {
             }}
         >
 
-            <div className="max-w-screen-xl mx-auto flex justify-evenly align-middle items-center flex-wrap w-full min-h-[500px] ">
+            <div className="max-w-screen-xl mx-auto flex justify-evenly align-middle items-center flex-wrap w-full min-h-[500px] py-[50px]">
 
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     <div className="w-24">
                         <Image src={ComponentWhatsApp} />
                     </div>
