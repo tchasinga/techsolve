@@ -36,3 +36,13 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 884px){
+  .Advantages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : 100%;
+  }
+}
