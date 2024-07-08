@@ -60,6 +60,13 @@
     padding: 10px;
   }
 
+  .reducer{
+    font-size: 15px;
+  }
+
+  .mytop{
+    margin-top: 10%;
+  }
 }
 
 .myshow{
