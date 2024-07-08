@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main className="max-w-full">
       <Honeypages />
-      <Honepagestwo />
+      {/* <Honepagestwo />
       <Description />
       <Providerservice />
       <Ourservice />
       <Ourrecentworks/>
       <Contactus />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

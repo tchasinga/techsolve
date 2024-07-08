@@ -29,3 +29,7 @@
   flex-direction: row-reverse;
 }
 
+
+/* this it will be a tablet breackpoint view */
+@media screen and (max-width: 884px){
+}
