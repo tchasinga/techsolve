@@ -101,3 +101,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+.bg-blacking{
+  background: rgba( 255, 255, 255, 0 );
+ backdrop-filter: blur( 3px );
+}

@@ -18,7 +18,7 @@ export default function Navbars() {
     ];
 
     return (
-        <nav className='fixed font-poppins font-sans w-full left-0 top-0 z-[999] mypad'>
+        <nav className='fixed font-poppins font-sans w-full left-0 top-0 z-[999] mypad bg-blacking'>
             <div className="flex items-center justify-between">
                 <div className="mx-7 w-[150px]">
                     <Image src={ComponentWhatsApp}/>
