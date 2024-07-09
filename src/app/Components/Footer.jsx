@@ -18,7 +18,7 @@ export default function Footer() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${myIgm.src}) center / cover no-repeat fixed`,
             }}
         >
-            <motion.div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px] py-12"
+            <motion.div className="max-w-screen-xl mx-auto flex justify-center justify-evenly items-center flex-wrap w-full min-h-[500px] py-12"
            initial="offscreen"
            whileInView={"onscreen"}
             variants={textVariantRevealser()} 
