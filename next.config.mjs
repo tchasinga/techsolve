@@ -3,6 +3,8 @@
 import withVideos from 'next-videos';
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    distDir: 'dist',
+};
 
 export default withVideos(nextConfig);
