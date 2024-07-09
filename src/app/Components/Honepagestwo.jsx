@@ -6,6 +6,9 @@ import { motion } from "framer-motion"
 import { containerVariant, textVariantReveals } from '../Animation/animation.js';
 
 export default function HomepageTwo() {
+
+  const myVideLinks =  'https://www.youtube.com/watch?v=2BTduFNxing'
+
   return (
     <div className="max-w-screen-xl mx-auto p-4">
       <motion.div 
@@ -59,6 +62,7 @@ export default function HomepageTwo() {
             poster="poster.jpg"
             preload="auto"
             playsInline
+            controls
           />
         </div>
 
