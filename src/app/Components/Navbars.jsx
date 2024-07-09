@@ -4,14 +4,16 @@ import { useState } from 'react'; // Removed unused useEffect import
 import '../globals.css'
 import Image from "next/image";
 import ComponentWhatsApp from '../Log/WhatsApp.jpeg'
+import Link from 'next/link';
 
 export default function Navbars() {
     const [open, setOpen] = useState(false);
     const menuLinks = [
-        { name: "Home", link: "#home" },
-        { name: "About", link: "#about" },
-        { name: "Skills", link: "#skills" },
-        { name: "Portfolio", link: "#projects" },
+        { name: "Welcom", link: "#home" },
+        { name: "Advantage", link: "#advantage" },
+        { name: "Description", link: "#description" },
+        { name: "Services", link: "#services" },
+        { name: "Our-works", link: "#theworks" },
         { name: "Contact", link: "#contact" },
     ];
 
@@ -26,7 +28,7 @@ export default function Navbars() {
                     <ul className="flex items-center font-poppins font-sans py-2 text-sm">
                         {menuLinks.map((menu, i) => (
                             <li key={i} className="px-3 text-white font-poppins font-sans hover:text-cyan-600">
-                                <a href={menu.link}>{menu.name}</a>
+                                <Link href={menu.link}>{menu.name}</Link>
                             </li>
                         ))}
                     </ul>
@@ -69,7 +71,7 @@ export default function Navbars() {
                                 key={i}
                                 className="px-6 hover:text-cyan-600"
                             >
-                                <a href={menu.link}>{menu.name}</a>
+                                <Link href={menu.link}>{menu.name}</Link>
                             </li>
                         ))}
                     </ul>

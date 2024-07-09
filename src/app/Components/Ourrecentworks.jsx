@@ -9,6 +9,7 @@ import Renders from './Renders.jsx';
 export default function Ourrecentworks() {
     return (
         <div className="min-h-screen  w-full max-w-full bg-fixed object-fill "
+             id='theworks'
             style={{
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}

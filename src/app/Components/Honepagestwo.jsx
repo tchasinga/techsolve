@@ -10,7 +10,7 @@ export default function HomepageTwo() {
   const myVideLinks =  'https://www.youtube.com/watch?v=2BTduFNxing'
 
   return (
-    <div className="max-w-screen-xl mx-auto p-4">
+    <div className="max-w-screen-xl mx-auto p-4" id='advantage'>
       <motion.div 
         className="mx-auto py-[50px] items-center justify-center flex gap-6 flex-wrap w-full"
         initial="offscreen"

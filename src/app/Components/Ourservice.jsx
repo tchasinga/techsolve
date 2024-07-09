@@ -39,6 +39,7 @@ export default function Ourservice() {
 
     return (
         <div className="min-h-screen w-full max-w-full bg-fixed object-fill"
+           id='services'
             style={{
                 background: `linear-gradient(rgba(4, 5, 5, 0.716), rgba(4, 5, 5, 0.716)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}

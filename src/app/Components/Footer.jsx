@@ -13,7 +13,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 export default function Footer() {
     return (
-        <div className="min-h-[500px]"
+        <div className="min-h-[500px]" id='contact'
             style={{
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${myIgm.src}) center / cover no-repeat fixed`,
             }}
