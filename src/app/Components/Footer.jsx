@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import myIgm from '../Image/pexelsdivinetechygirl.jpg'
 import Image from 'next/image'
@@ -7,6 +8,8 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiWhatsapp } from "react-icons/si";
+import { motion } from 'framer-motion';
+import { textVariantRevealser } from '../Animation/animation';
 
 export default function Footer() {
     return (
@@ -15,7 +18,11 @@ export default function Footer() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${myIgm.src}) center / cover no-repeat fixed`,
             }}
         >
-            <div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px] py-12">
+            <motion.div className="max-w-screen-xl mx-auto flex justify-evenly items-center flex-wrap w-full min-h-[500px] py-12"
+           initial="offscreen"
+           whileInView={"onscreen"}
+            variants={textVariantRevealser()} 
+            >
                 <div className="flex flex-col items-center">
                     <div className="w-24">
                         <Image src={ComponentWhatsApp} />
@@ -118,7 +125,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

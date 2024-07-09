@@ -35,6 +35,24 @@ export const textVariantReveals = (delay = 1) => ({
 });
 
 
+export const textVariantRevealser = (delay = 1) => ({
+    offscreen: {
+        opacity: 0,
+        y: 0,
+    },
+    onscreen: {
+        opacity: 1,
+        y: 20,
+        transition: {
+            delay: delay,
+            duration: 2.5,
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+        }
+    }
+});
+
 
 export const ImageOne = (delay = 0.5) => ({
     offscreen: {
