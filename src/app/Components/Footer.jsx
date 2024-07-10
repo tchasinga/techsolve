@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import myIgm from "../Image/pexelsdivinetechygirl.jpg";
-import Image from "next/image";
-import ComponentWhatsApp from "../Log/WhatsApp.jpeg";
 import { IoLogoInstagram, IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
@@ -27,9 +25,7 @@ export default function Footer() {
         variants={textVariantRevealser()}
       >
         <div className="flex flex-col items-center">
-          <div className="w-24">
-            <Image src={ComponentWhatsApp} />
-          </div>
+          
           <div className="flex flex-col text-slate-900 text-sm py-2 text-center">
             <p>We implement the corporation performance</p>
             <p>Software TSk for consideration planning</p>
