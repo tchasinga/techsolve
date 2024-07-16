@@ -3,6 +3,8 @@ import React from 'react'
 
 export default function Applyingpages() {
   return (
-    <div>page</div>
+    <div>
+       this is my pages now 
+    </div>
   )
 }
