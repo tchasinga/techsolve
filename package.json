@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.16.1",
     "animate.css": "^4.1.1",
+    "firebase": "^10.12.3",
     "framer-motion": "^11.2.13",
     "next": "14.2.4",
     "next-videos": "^1.5.0",
