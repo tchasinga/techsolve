@@ -14,7 +14,9 @@ export default function Navbars() {
         { name: "Description", link: "#description" },
         { name: "Services", link: "#services" },
         { name: "Our-works", link: "#theworks" },
+        {name : "Apply-now", link : ''},
         { name: "Contact", link: "#contact" },
+        
     ];
 
     return (
