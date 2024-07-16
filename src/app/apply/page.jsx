@@ -1,24 +1,162 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TextField from "@mui/material/TextField";
-import { Autocomplete } from "@mui/material";
-
+import { Autocomplete, Button } from "@mui/material";
+import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
+import { app } from "../firebase.js";
 
 export default function MultilineTextFields() {
-  const skill = ['Java' , 'Html' , 'JavaScript' , 'MongoDb' , 'React' , 'Mysql']
-  return (
-    <div className="max-w-4xl mx-auto flex flex-col justify-center min-h-screen ">
-     <form>
-     <TextField id="" type="text" required  label="Enter your name" multiline />
-      <TextField id="" type="email" required label="Enter your email" multiline />
-      <TextField id="" type="text" required label="Multiline" multiline rows={10} />
-      <Autocomplete  options={skill} placement='bottom' renderInput={(params) => <TextField type="text" required  {...params} label="Services"/>}/>
-      <div className="flex gap-3">
-            <TextField onChange={(e) => setFiles(e.target.files)} type="file" className='p-2 border w-full border-gray-300 rounded-lg' id='images' accept='image/*' multiple/>
-                <button disabled={uploading} type='button' onClick={handlerImageSubmit} className='font-medium w-full text-xs  text-green-700 border rounded-xl p-3'>{uploading ? 'Uploading...' : 'Upload data'}</button>
-            <p className='text-red-700 text-xs'>{imageUploadImageError &&  imageUploadImageError}</p>
+  const [files, setFiles] = useState([]);
+  const [filePerc, setFilePerc] = useState(0);
+  const [imageUploadError, setImageUploadError] = useState(false);
+  const [fileUploadError, setFileUploadError] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    typeofservices: "",
+    description: "",
+    imageUrls: [],
+  });
+
+  
+    // Adding image to the database
+    const handlerImageSubmit = () => {
+      if(files.length > 0 && files.length + formData.imageUrls.length < 10){
+          setUploading(true)
+          setImageUploadError(false)
+          const promise = []
+          for (let i = 0; i < files.length; i++){
+              promise.push(storeImage(files[i]))
+          }
+          Promise.all(promise).then((urls) => {
+              setFormData({
+                  ...formData,
+                  imageUrls: formData.imageUrls.concat(urls),
+              });
+              setImageUploadError(false)
+              setUploading(false)
+          }).catch((err) =>{
+              console.error(err)
+              setImageUploadError("Image upload error (2 mb per image)")
+          });
+         
+      }else{
+          setImageUploadError(`You can upload max 10 images maximum (2 mb per image) and please select at least one image to upload ${currentUser.user.username}`)
+          setUploading(false)
+      }
+     }
+     const storeImage = async (file)=> {
+      return new Promise((resolve, reject) => {
+           const storage = getStorage(app)
+              const fileName = new Date().getTime() + file.name;
+              const storageRef = ref(storage, fileName);
+              const uploadTask = uploadBytesResumable(storageRef, file);
+              uploadTask.on(
+                  "state_changed",
+                  (snapshot) => {
+                      const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                      console.log(`Upload is ${progress}% done`);
+                      setFilePerc(Math.round(progress));
+                  },
+                  (error) => {
+                      reject(error);
+                      setFileUploadError(true);
+                  },
+                  () => {
+                      getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+                          resolve(downloadURL);
+                      });
+                  }
+              );  
+      })
+     }
+  
+    // Adding idea to the database
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.id]: e.target.value });
+    }
+  
+    //  Adding Handler Submit to submit the form data to the database of MongoDB and Firebase Storage
+    const handlerSubmitForm = async (e) => {
+      try {
+        e.preventDefault();
+        setLoading(true);
+        setError(false);
+    
+        const res = await fetch(`http://localhost:8000/apis/aply/create`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            ...formData
+          }),
+        });
+    
+        const data = await res.json();
+    
+        setLoading(false);
+    
+        if (data.success === true) {
+          setError(data.message);
+          console.log('Registration Successful:', data);
+          return;
+        }
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+    
+    
+    
+  
+    return (
+      <main className="max-w-7xl mx-auto mt-20">
+       <div className="flex flex-wrap items-center gap-3 w-full mt-10">
+          <h1 className="text-2xl font-light">Please complete the form</h1>
         </div>
-     </form>
-    </div>
+        {/* Form side will be design with grid... system*/}
+        <form onSubmit={handlerSubmitForm} className="mt-11 flex-col flex justify-center w-full">
+        <div className='flex justify-end mb-4'>
+         
+          </div>
+          <div className="gridsystem">
+          <div className=' text-black '>
+            <TextField type="text" variant='outlined' onChange={handleChange} value={formData.fullName}  label="Enter your name here" name="name" id="fullName" className="border p-2 w-full rounded-md"/>
+          </div>
+          <div className='text-black my-2'>
+            <TextField type="text" variant='outlined'  onChange={handleChange} value={formData.email}  label="Enter your email here" name="email" id="email" className="border p-2 w-full rounded-md"/>
+          </div>
+          
+          <div className='text-black input-group mt-3'>
+            <TextField type="text" variant='outlined' label="Give us more details here"  required name='description'  onChange={handleChange} value={formData.description}  id='description' autoComplete='off' className='input w-full'
+            multiline rows={10} 
+            />
+          </div>
+          <div className='text-black my-2'>
+            <select name="typeofideas" id="typeofservices" value={formData.typeofservices} onChange={handleChange} className="p-2 w-full rounded-md">
+              <option value="Theater">Theater</option>
+              <option value="Podcasting">Podcasting</option>
+              <option value="Language">Language</option>
+              <option value="History">History</option>
+              <option value="EnvironmentandSustainability">Environment and Sustainability</option>
+              <option value="Politics">Politics</option>
+            </select>
+          </div>
+          <div className="flex gap-3">
+              <input onChange={(e) => setFiles(e.target.files)} type="file" className='p-2 border w-full border-gray-300 rounded-lg' id='images' accept='image/*' multiple/>
+                  <button disabled={uploading} type='button' onClick={handlerImageSubmit} className='font-medium w-full text-xs  text-green-700 border rounded-xl p-3'>{uploading ? 'Uploading...' : 'Upload Image'}</button>
+              </div>
+          </div>
+          <div className="flex flex-col my-3">
+          <Button type='submit' variant='contained'>{loading ? 'applying...' : 'Apply now'}</Button>
+             {error &&<p className='text-green-700 text-xs'>{error}</p>}
+          </div>
+        </form>
+        </main>
   );
 }
