@@ -14,7 +14,7 @@ export default function Navbars() {
         { name: "Description", link: "#description" },
         { name: "Services", link: "#services" },
         { name: "Our-works", link: "#theworks" },
-        {name : "Apply-now", link : ''},
+        {name : "Apply-now", link : '../apply'},
         { name: "Contact", link: "#contact" },
         
     ];

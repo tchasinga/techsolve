@@ -8,7 +8,7 @@ import { MdNavigateNext } from 'react-icons/md';
 import 'animate.css';
 import { motion } from "framer-motion";
 import { ImageOne, ImageTwo, ImageThree , textVariantReveals} from '../Animation/animation.js';
-import Link from 'next/link';
+
 
 export default function Description() {
     return (
@@ -17,7 +17,7 @@ export default function Description() {
                 background: `linear-gradient(rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(${Oneimg.src}) center / cover no-repeat fixed`,
             }}
         >
-             <Link href="../app">Car Data</Link>
+             
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 p-4 mypad  ">
                 {/* First Div with Images */}
                 <div className="h-[400px]  w-[250px] bg-transparent border-2 border-red-500 relative sm:my-[100px] mynode">
