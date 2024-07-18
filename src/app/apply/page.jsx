@@ -138,7 +138,7 @@ export default function MultilineTextFields() {
           </div>
           <div className='text-black my-2'>
             <select name="typeofideas" id="typeofservices" value={formData.typeofservices} onChange={handleChange} className="p-2 w-full rounded-md">
-              <option value="Select one services">Selectt one services</option>
+              <option value="Select one services">Select one services</option>
               <option value="Website Development">Website Development</option>
               <option value="App Development Android & IOS">App Development Android & IOS</option>
               <option value="Web applications">Web applications</option>
