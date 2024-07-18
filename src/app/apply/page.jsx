@@ -138,12 +138,17 @@ export default function MultilineTextFields() {
           </div>
           <div className='text-black my-2'>
             <select name="typeofideas" id="typeofservices" value={formData.typeofservices} onChange={handleChange} className="p-2 w-full rounded-md">
-              <option value="Theater">Theater</option>
-              <option value="Podcasting">Podcasting</option>
-              <option value="Language">Language</option>
-              <option value="History">History</option>
-              <option value="EnvironmentandSustainability">Environment and Sustainability</option>
-              <option value="Politics">Politics</option>
+              <option value="Select one services">Selectt one services</option>
+              <option value="Website Development">Website Development</option>
+              <option value="App Development Android & IOS">App Development Android & IOS</option>
+              <option value="Web applications">Web applications</option>
+              <option value="UI design">UI design</option>
+              <option value="Digital Marketing and Branding">Digital Marketing and Branding</option>
+              <option value="Brand Design">Brand Design</option>
+              <option value="Professional Training">Professional Training</option>
+              <option value="POS System - Software and Hardware">POS System - Software and Hardware</option>
+              <option value="SEO Services">SEO Services</option>
+              <option value="Photo editing">Photo editing</option>
             </select>
           </div>
           <div className="flex gap-3">
