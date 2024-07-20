@@ -9,7 +9,6 @@ import 'animate.css';
 import { motion } from "framer-motion";
 import { ImageOne, ImageTwo, ImageThree , textVariantReveals} from '../Animation/animation.js';
 
-
 export default function Description() {
     return (
         <div id='description'  className="min-h-screen w-full max-w-full bg-fixed object-fill flex flex-col justify-center"
