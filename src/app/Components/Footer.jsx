@@ -104,7 +104,7 @@ export default function Footer() {
                 <h1>Email us:</h1>
                 <div className="text-slate-700 text-sm font-medium">
                   <p>tchasingajacques@gmail.com</p>
-                  <p>Kiokoj81@gmail.com</p>
+                  <p>kiokoj81@gmail.com</p>
                 </div>
               </div>
             </div>
