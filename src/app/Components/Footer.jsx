@@ -53,7 +53,7 @@ export default function Footer() {
             <p>Services</p>
             <p>About</p>
             <p>Blog</p>
-            <p>Testimonials</p>
+            <p>Apply-now</p>
             <p>Contact</p>
           </div>
         </div>
